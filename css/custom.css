@@ -1,0 +1,18 @@
+.feature-card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 15px;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
