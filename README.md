@@ -6,6 +6,8 @@ It is a Basic app using SSO keycloak. Realm for ACME with users and two roles us
 [<img src="./doc/img/acme_login_info.png" width="200">](acme_login_info.png)
 [<img src="./doc/img/keycloak_realm_loaded.png" width="200">](keycloak_realm.png)
 
+>> see screenshots in full size at [acme_app](./doc/acme_app.md) and [create_realm](./doc/create_realm.md)
+
 ## Development mode
 
 ### Run keycloack in docker and load ACME realm
@@ -35,6 +37,8 @@ Open [http://localhost:3000](http://localhost:3000) and login with one of users 
 | Eduardo   | eduardo   | 123456   |
 | Liza      | liza      | liza*123 | 
 
+
+for reference, see screenshots [acme_app](./doc/acme_app.md)
 
 ## customizing Keycloak login
 
