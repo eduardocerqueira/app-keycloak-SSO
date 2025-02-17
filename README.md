@@ -23,6 +23,17 @@ Import pre-configured realm:
 1. Browse, in reasource file and select [config/realm-acme.json](./config/realm-acme.json) and create.
 1. for reference, see screenshots [create_realm](./doc/create_realm.md)
 
+OR Import REALM conf during container creation
+
+``` 
+export PATH_MY_REALM=/$HOME/app-keycloak-SSO/config/
+docker run --platform linux/amd64 --name keycloak -p 8080:8080 \
+        -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin \
+        -v $PATH_MY_REALM:/opt/keycloak/data/import \
+        quay.io/keycloak/keycloak:26.1.2 \
+        start-dev --import-realm
+```
+
 ### Install and run app
 
 ```
